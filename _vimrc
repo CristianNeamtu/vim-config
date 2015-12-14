@@ -3,7 +3,15 @@ set nocompatible
 filetype off
 
 " {{ Plugins 
-	"TODO: Add vundle
+    set rtp+=~/.config/vim/bundle/Vundle.vim
+    call vundle#begin()
+
+    " let Vundle manage Vundle, required
+    Plugin 'VundleVim/Vundle.vim'
+
+    call vundle#end()            " required
+    filetype plugin indent on    " required
+
 " }}
 
 " Settings {{
