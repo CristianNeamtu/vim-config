@@ -1,0 +1,7 @@
+Bundle 'tomasr/molokai'
+Bundle 'zaiste/Atom'
+Bundle 'w0ng/vim-hybrid'
+Bundle 'chriskempson/base16-vim'
+Bundle 'Elive/vim-colorscheme-elive'
+Bundle 'zeis/vim-kolor'
+Bundle 'altercation/vim-colors-solarized'

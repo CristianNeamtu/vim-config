@@ -3,29 +3,7 @@ set nocompatible
 filetype off
 
 " {{ Plugins 
-
-" VUNDLE {{{
-
-    set rtp+=~/.config/vim-config/bundle/vundle
-
-    call vundle#begin()
-
-    " the path where Vundle should install plugins
-    call vundle#begin('~/.config/vim-config/bundle/')
-
-    " let Vundle manage Vundle, required
-    Plugin 'VundleVim/Vundle.vim'
-    " Keep them here for now
-    " TODO: configure 
-    Bundle 'scrooloose/nerdtree'
-    Bundle 'tpope/vim-surround'
-    Bundle 'tpope/vim-repeat'
-    Bundle 'ctrlpvim/ctrlp.vim'
-    Bundle 'tacahiroy/ctrlp-funky'
-    Bundle 'altercation/vim-colors-solarized'
-
-    call vundle#end()            " required
-" }}}
+    source ~/.config/vim-config/plugins/init.vim
 " }}
 
 " Settings {{

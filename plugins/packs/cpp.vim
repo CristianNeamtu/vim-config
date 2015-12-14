@@ -1,0 +1,5 @@
+Bundle 'Rip-Rip/clang_complete'
+Bundle 'LucHermitte/clang_indexer'
+Bundle 'newclear/lh-vim-lib'
+Bundle 'LucHermitte/vim-clang'
+Bundle 'devx/c.vim'

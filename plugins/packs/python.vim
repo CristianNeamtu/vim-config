@@ -1,0 +1,5 @@
+Bundle 'klen/python-mode'
+Bundle 'python.vim'
+Bundle 'python_match.vim'
+Bundle 'pythoncomplete'
+Bundle 'jmcantrell/vim-virtualenv'
