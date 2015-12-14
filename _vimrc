@@ -3,21 +3,36 @@ set nocompatible
 filetype off
 
 " {{ Plugins 
-    set rtp+=~/.config/vim/bundle/Vundle.vim
+
+" VUNDLE {{{
+
+    set rtp+=~/.config/vim-config/bundle/vundle
+
     call vundle#begin()
+
+    " the path where Vundle should install plugins
+    call vundle#begin('~/.config/vim-config/bundle/')
 
     " let Vundle manage Vundle, required
     Plugin 'VundleVim/Vundle.vim'
+    " Keep them here for now
+    " TODO: configure 
+    Bundle 'scrooloose/nerdtree'
+    Bundle 'tpope/vim-surround'
+    Bundle 'tpope/vim-repeat'
+    Bundle 'ctrlpvim/ctrlp.vim'
+    Bundle 'tacahiroy/ctrlp-funky'
+    Bundle 'altercation/vim-colors-solarized'
 
     call vundle#end()            " required
-    filetype plugin indent on    " required
-
+" }}}
 " }}
 
 " Settings {{
 "
     " General {{ 
         filetype plugin indent on " Detect file types
+        syntax on
         set encoding=utf-8
         set mouse=a               " Allow mouse usage
         set virtualedit=onemore   " Allow the cursor to go beyod the last character
@@ -32,7 +47,7 @@ filetype off
         set undolevels=1000        " Maximum number of changes to record
         set undoreload=10000       " Maximum number lines to save for undo on a buffer reload
     " }}
-    
+
     " Appearance {{
         colorscheme solarized      " Colorscheme
         set background=dark        " Assume a dark background
