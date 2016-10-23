@@ -10,5 +10,3 @@ git clone https://github.com/gmarik/vundle.git ~/.config/vim-config/bundle/vundl
 # Install plugins
 vim +BundleInstall +qall
 
-# Compiling YCM
-python2 ~/.config/vim-config/bundle/YouCompleteMe/install.py --clang-completer

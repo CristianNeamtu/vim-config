@@ -27,7 +27,7 @@ filetype off
     " }}
 
     " Appearance {{
-        colorscheme solarized      " Colorscheme
+        colorscheme kolor          " Colorscheme
         set background=dark        " Assume a dark background
         set nofoldenable           " Enable folding
         set number                 " Always show line numbers
@@ -58,7 +58,7 @@ filetype off
         set ignorecase
         set incsearch
     " }}
-    
+
     " Scroll {{
         set scrolljump=5            " Lines to scroll when cursor leaves screen
         set scrolloff=3             " Keep 3 above or below cursor when scrolling
@@ -73,7 +73,7 @@ filetype off
         set smarttab
         set softtabstop=4
     " }}
-    
+
     " Misc {{
         set backspace=indent,eol,start
     " }}
@@ -118,13 +118,13 @@ filetype off
                 vmap <Left> <NOP>
                 vmap <Right> <NOP>
             " }}
-    
+
             " Toggles absolute and relative line numer
             nnoremap <C-n> :call NumberToggle()<cr>
 
             " Lazier version (Esc is too far)
             inoremap jk <ESC>
-            
+
             " Make < > shifts keep selection
             vnoremap < <gv
             vnoremap > >gv
@@ -150,4 +150,9 @@ filetype off
             nnoremap <leader>po "*p
     " }}
 " }}
+
+" {{ Plugins 
+    source ~/.config/vim-config/tweaks/tweaks.vim
+" }}
+
 
