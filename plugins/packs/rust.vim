@@ -1,1 +1,1 @@
-Bundle 'wting/rust.vim'
+Plugin 'rust-lang/rust.vim'

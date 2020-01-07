@@ -1,1 +1,1 @@
-Bundle 'fatih/vim-go'
+Plugin 'fatih/vim-go'

@@ -12,6 +12,9 @@ filetype off
         filetype plugin indent on " Detect file types
         syntax on
         set encoding=utf-8
+        set fileencoding=utf-8
+        set fileencodings=utf-8
+        set ttyfast
         set mouse=a               " Allow mouse usage
         set virtualedit=onemore   " Allow the cursor to go beyod the last character
         set history=1000          " Store a lot of history
@@ -71,7 +74,10 @@ filetype off
         set shiftwidth=4
         set smartindent
         set smarttab
-        set softtabstop=4
+        set tabstop=4
+        set softtabstop=0
+        set shiftwidth=4
+        set expandtab
     " }}
 
     " Misc {{
@@ -114,7 +120,7 @@ filetype off
                 imap <Right> <NOP>
                 " Visual
                 vmap <Up> <NOP>
-                vmap<Down> <NOP>
+                vmap <Down> <NOP>
                 vmap <Left> <NOP>
                 vmap <Right> <NOP>
             " }}
@@ -151,8 +157,9 @@ filetype off
     " }}
 " }}
 
-" {{ Plugins 
+" {{ Tweaks
     source ~/.config/vim-config/tweaks/tweaks.vim
+    source ~/.config/vim-config/tweaks/mappings.vim
 " }}
 
 

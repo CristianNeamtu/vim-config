@@ -1,5 +1,4 @@
-Bundle 'klen/python-mode'
-Bundle 'python.vim'
-Bundle 'python_match.vim'
-Bundle 'pythoncomplete'
-Bundle 'jmcantrell/vim-virtualenv'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'raimon49/requirements.txt.vim'
+
+Plugin 'nvie/vim-flake8'
